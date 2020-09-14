@@ -14,4 +14,9 @@ class Transfer
     @sender.valid? && @receiver.valid?
   end
 
+  def execute_transaction
+    if self.valid?
+      @receiver.deposit(@amount)
+    end
+  end
 end
