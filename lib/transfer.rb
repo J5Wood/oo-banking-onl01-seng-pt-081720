@@ -16,6 +16,7 @@ class Transfer
 
   def execute_transaction
     if self.valid?
+      @sender.withdraw(@amount)
       @receiver.deposit(@amount)
     else
       "Transaction rejected. Please check your account balance."
