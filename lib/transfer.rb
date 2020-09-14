@@ -31,6 +31,6 @@ class Transfer
       @sender.depost(@amount)
     end
   end
-      
-      
+
+
 end
