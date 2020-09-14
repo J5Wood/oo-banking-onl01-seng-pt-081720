@@ -18,8 +18,8 @@ class Transfer
     if self.valid?
       @receiver.deposit(@amount)
     else
-      
+      "Transaction rejected. Please check your account balance."
     end
   end
-  
+
 end
